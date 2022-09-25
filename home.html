@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+       <!-- tailwind css cdn  -->
+       <script src="https://cdn.tailwindcss.com"></script>
+       <!-- daisy ui cdn -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+       <!-- fontawesome cdn -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
+<body>
+    <!-- navbar starts here  -->
+    <div class="navbar bg-blue-600">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered" />
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="https://placeimg.com/80/80/people" />
+              </div>
+            </label>
+            <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar ends here -->
+
+
+      <!-- main content part starts here -->
+      <div id="main-content" class="min-h-[200px] mt-5 max-w-[1500px] mx-auto p-3 flex justify-between flex-col-reverse md:flex-row">
+          
+        <div class="min-h-[100px] w-full md:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" id="product-container">
+             
+
+
+      
+
+        </div>
+
+        <div id="cart-container" class="min-h-[100px] w-full md:w-[27%] h-[500px] shadow-2xl bg-slate-700 rounded-lg sticky top-0 p-5 overflow-auto">
+            <h1 class="text-center text-white font-semibold my-5">My Cart</h1>
+            <hr />
+            <div id="cart-items">
+
+            </div>
+            <div class="text-white" id="expenses">
+                <p>Total Cost: $<span id="total-cost">0</span></p>
+                <p>Tax: $<span id="tax">0</span></p>
+                <div>
+                  <p class="text-secondary">Apply promo code!!</p>
+                  <input class="input input-bordered w-[100px] text-black h-[35px]" id="promo-input" type="text">
+                  <button class="btn btn-warning btn-sm" id="promo-btn">apply</button>
+                </div>
+                <p>Grand Total: $<span id="grand-total">0</span></p>
+              </div>
+    
+
+        </div>
+
+
+      </div>
+
+      <!-- main content part ends here -->
+
+
+
+      <script src="./js/data.js"></script>
+      <script src="./js/home.js"></script>
+
+</body>
+</html>
