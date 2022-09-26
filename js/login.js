@@ -11,7 +11,7 @@ loginButton.addEventListener('click',function(){
 
     if(email === 'ph@gmail.com' && password === '12345'){
         // console.log('you are welcome')
-        location.pathname  = 'home.html'
+        location.href  = 'https://mirjakariya.github.io/rescue-military-app/home.html'
     }
     else{
         // console.log('your access is denied')
