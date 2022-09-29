@@ -121,7 +121,7 @@ function showCart() {
 
 
 
-//promo btn work
+//promo btn workddddddd
 document.getElementById('promo-btn').addEventListener('click',function(){
     const promoField = document.getElementById("promo-input").value;
     if(promoField === promo){
